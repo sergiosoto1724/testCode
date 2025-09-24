@@ -1,4 +1,4 @@
-package org;
+package org.exercise;
 
 public class StringReverse {
     public static void main(String[] args) {

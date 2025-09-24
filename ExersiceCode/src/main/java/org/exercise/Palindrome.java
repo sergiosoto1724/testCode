@@ -1,8 +1,12 @@
-package org;
+package org.exercise;
+
+import java.util.Scanner;
 
 public class Palindrome {
     public static void main(String[] args) {
-    String str= "radar";
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Write the word: ");
+    String str = teclado.next();
     if(IsParlindrome(str)){
         System.out.println("\"" + str + "\" Is a palindrome." );
     } else {
@@ -11,7 +15,7 @@ public class Palindrome {
 
     }
     public static boolean IsParlindrome(String str){
-        int left = 0;
+       /* int left = 0;
         int right = str.length() - 1;
         while (left < right){
             if(str.charAt(left) != str.charAt(right)){
@@ -20,7 +24,9 @@ public class Palindrome {
             left++;
             right--;
         }
-        return true;
+        return true; */
+        return str.equals( new StringBuilder(str).reverse().toString());
+
 
     }
 

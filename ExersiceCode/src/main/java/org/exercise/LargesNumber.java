@@ -1,4 +1,4 @@
-package org;
+package org.exercise;
 
 public class LargesNumber {
     public static void main(String[] args) {

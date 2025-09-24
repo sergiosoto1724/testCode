@@ -1,4 +1,4 @@
-package org;
+package org.exercise;
 
 import java.lang.reflect.Array;
 import java.util.*;
